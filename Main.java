@@ -20,5 +20,22 @@ public class Main{
             System.out.println(names[i]);
         }
 
+        System.out.println("");
+
+        int[] arr = new int[20];
+
+        for (int i = 0; i < arr.length; i++) {
+            arr[i] = i + 1;
+        }
+        
+        int sum = 0;
+
+            for (int i = 0; i < arr.length; i++) {
+            sum += arr[i];
+        }
+
+        System.out.println("Sum: " + sum);
+       
+        
     }
 }
