@@ -1,6 +1,9 @@
+import java.util.Random;
+
 public class Main{
     public static void main (String[]args){
-        
+        Random random = new Random();
+
         String[] names = new String[10];
         
         names[0] = ("Tyrone");
@@ -38,6 +41,27 @@ public class Main{
 
         System.out.println("Sum: " + sum);
        
+        System.out.println("");
+
+        int rows = 4;
+        int cols = 3;
+
+        int[][] array2D = new int[rows][cols];
+
+        for (int i = 0; i < rows; i++) {
+            for (int j = 0; j < cols; j++) {
+                array2D[i][j] = random.nextInt(100);
+            }
+        }
+
+        for (int i = 0; i < rows; i++) {
+            for (int j = 0; j < cols; j++) {
+                System.out.print(array2D[i][j] + " ");
+            }
+            System.out.println();
+        }
+        
+
         
     }
 }
